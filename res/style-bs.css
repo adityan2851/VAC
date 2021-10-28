@@ -13,14 +13,134 @@
   background-color: #f5f5f7;
   opacity: 0.9;
   font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
+#close-button {
+  margin-left: 15px;
+}
 .hero {
   display: flex;
   flex-direction: row;
-  height: 60vh;
+  padding-top: 50px;
+  height: 550px;
+  position: relative;
+  background-color: white;
 }
+.hero.blue {
+  background-color: #0066cc;
+}
+.toggle-color {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0066cc;
+}
+section.hero.cast {
+  background-color: #0066cc;
+}
+
 .cover-page-image {
-  background-image: url("./images/pixel-2.jpg");
+  height: 70vh;
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  flex-basis: 45%;
+}
+
+.cover-page-image.book {
+  background-image: url("./images/chrome.png");
+}
+
+.cover-page-image.nest {
+  background-image: url("./images/nest.png");
+}
+
+.cover-page-image.cast {
+  background-image: url("./images/cast.png");
+}
+
+.info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.product-heading {
+  font-size: 65px;
+  text-align: center;
+  font-weight: bold;
+}
+.product-heading.white {
+  color: white;
+}
+.product-subtitle {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+}
+.product-subtitle.white {
+  color: white;
+}
+.product-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-links > a {
+  margin: 0.8rem 1rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.button-text {
+  /* display: none; */
+  color: white;
+  margin-bottom: 0;
+}
+
+.button-text.blue {
+  color: #0066cc;
+}
+.button-icon.cart {
+  margin-right: 20px;
+}
+
+.buttons-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  width: 60%;
+}
+
+.cart-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  transition: all 0.5s ease-in;
+  background-color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #0066cc;
+}
+
+section.hero:nth-child(1) {
+  background-color: #0066cc;
+}
+
+.cart-button.blue {
+  background-color: #0066cc;
+  border: 1px solid white;
 }
