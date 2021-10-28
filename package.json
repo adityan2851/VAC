@@ -1,0 +1,24 @@
+{
+  "name": "vac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon sample.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityan2851/VAC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityan2851/VAC/issues"
+  },
+  "homepage": "https://github.com/adityan2851/VAC#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  }
+}
