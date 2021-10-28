@@ -100,14 +100,13 @@
           </div>
         </div>
       </div>
-      <div class="toggle-color">
-        Toggle Color
-      </div>
+      <button type="button" class="btn btn-dark toggle-color">Toggle Theme</button>
+
     </section>
     <section class="hero cast">
       <div class="info">
-        <h1 class="product-heading white">Chromethrow Pro</h1>
-        <h2 class="product-subtitle white">Oh.So.Pro</h2>
+        <h1 class="product-heading ">Chromethrow Pro</h1>
+        <h2 class="product-subtitle ">Oh.So.Pro</h2>
        
         <div class="buttons-list">
           <div class="cart-button">
@@ -125,9 +124,8 @@
         </div>
       </div>
       <div class="cover-page-image cast"></div>
-      <div class="toggle-color">
-        Toggle Color
-      </div>
+      <button type="button" class="btn btn-light toggle-color">Toggle Theme</button>
+
     </section>
     <section class="hero ">
       <div class="cover-page-image nest"></div>
@@ -150,9 +148,8 @@
           </div>
         </div>
       </div>
-      <div class="toggle-color">
-        Toggle Color
-      </div>
+      <button type="button" class="btn btn-dark toggle-color">Toggle Theme</button>
+
     </section>
 
     <!-- Bootstrap -->
@@ -173,8 +170,10 @@
       $(document).ready(function () {
 
         $('.toggle-color').click(function(){
-          $(this).toggleClass('blue');
-          $(this).parent('section').toggleClass('blue');
+          $(this).toggleClass('dark');
+          $(this).parent('section').toggleClass('dark');
+          $(this).toggleClass('btn-dark');
+          $(this).toggleClass('btn-light');
         })
 
         $('#close-button').click(function () {

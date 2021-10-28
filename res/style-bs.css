@@ -24,22 +24,22 @@
 .hero {
   display: flex;
   flex-direction: row;
-  padding-top: 50px;
-  height: 550px;
+  padding: 50px 0px;
+
   position: relative;
   background-color: white;
 }
-.hero.blue {
-  background-color: #0066cc;
+.hero.dark {
+  background-color: #1d1d1f;
+  color: white;
 }
 .toggle-color {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #0066cc;
 }
-section.hero.cast {
+.hero.cast {
   background-color: #0066cc;
 }
 
@@ -78,17 +78,19 @@ section.hero.cast {
   text-align: center;
   font-weight: bold;
 }
-.product-heading.white {
+.hero.cast .product-heading {
   color: white;
 }
+
 .product-subtitle {
   font-size: 50px;
   font-weight: 300;
   text-align: center;
 }
-.product-subtitle.white {
+.hero.cast .product-subtitle {
   color: white;
 }
+
 .product-links {
   width: 100%;
   display: flex;
@@ -134,10 +136,6 @@ section.hero.cast {
   margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #0066cc;
-}
-
-section.hero:nth-child(1) {
-  background-color: #0066cc;
 }
 
 .cart-button.blue {
